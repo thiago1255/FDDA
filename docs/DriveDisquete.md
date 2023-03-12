@@ -10,5 +10,6 @@
 ### Pinos de baixo:
  1. GND.
  2. Sem pinos.
+
  3-17. GND.
 ### Pinos de cima:
