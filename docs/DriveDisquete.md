@@ -29,7 +29,19 @@
  15. Leitura dos dados do disco. (MAIS INFORMAÇÕES SÃO NECESSÁRIAS)
  16. Seleciona o lado do disco para gravar/ler. (MAIS INFORMAÇÕES SÃO NECESSÁRIAS)
  17. Indica que um disco foi colocado. (MAIS INFORMAÇÕES SÃO NECESSÁRIAS)
-# Estrutura do disco:
+# Disquete:
 ## Furos:
 ### Anti-gravação:
+ - Furo do lado esquerdo.
+ - Aberto impossibilita gravação.
+ - Tem uma aba para abrir/fechar.
 ### Densidade:
+ - Furo do lado direito.
+ - Aberto se o disco é de alta densidade.
+ - Não mudar.
+## Partes metálicas:
+### Circulo central:
+ - Usado para o motor girar o disco.
+### Retângulo superior:
+ - Protege o disco.
+ - Não abrir, muito menos tocar no disco.
