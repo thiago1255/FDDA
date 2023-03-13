@@ -12,7 +12,7 @@
  2. Sem pinos.
  3. (até 17) Gnd.
 ### Pinos de cima:
- 1. Selecionar Densidade. (Não usado aparentemente, [leia esse parágrafo](https://github.com/thiago1255/FDDA/blob/main/docs/DriveDisquete.md#densidade).)
+ 1. Selecionar Densidade. (Deixar desconectado, aparentemente não necessário, [leia esse parágrafo](#densidade).)
  2. Uso customizado pelo drive. (Reservado, não usar ou ligar no GND).
  3. Uso customizado pelo drive. (Reservado, não usar ou ligar no GND).
  4. Inicio da faixa, manda um pulso 0 volts a cada vez queuma rotação é iniciada.
@@ -22,20 +22,20 @@
  8. Liga o motor de rotação do disco quando em 0 volts.
  9. Direção do motor da cabeça de leitura: 0v para dentro do disco, 5v para fora do disco.
  10. Muda de faixa a cada pulso de 0v, direção baseada no pino 9.
- 11. [Grava dados.](https://github.com/thiago1255/FDDA/blob/main/docs/DriveDisquete.md#sinais-de-grava%C3%A7%C3%A3o)
+ 11. [Grava dados.](#sinais-de-gravacao)
  12. Ativar gravação quando em 0v.
  13. Manda sinal de 0v quando na faixa mais externa do disco.
- 14. Indica que o disco está [em proteção contra gravação](https://github.com/thiago1255/FDDA/blob/main/docs/DriveDisquete.md#anti-grava%C3%A7%C3%A3o) quando em 0v.
- 15. [Leitura dos dados do disco.](https://github.com/thiago1255/FDDA/blob/main/docs/DriveDisquete.md#sinais-de-grava%C3%A7%C3%A3o)
+ 14. Indica que o disco está [em proteção contra gravação](#anti-gravacao) quando em 0v.
+ 15. [Leitura dos dados do disco.](#sinais-de-gravacao)
  16. Seleciona o lado do disco para gravar/ler: 5v parte de baixo (lado 0).
  17. Indica que o aparelho está pronto quando em 0v. (Aparentemente é para detectar o disco também.)
 # Disquete:
 ## Furos:
-### Anti-gravação:
+### Anti-gravação: {#anti-gravacao}
  - Furo do lado esquerdo.
  - Aberto impossibilita gravação.
  - Tem uma aba para abrir/fechar.
-### Densidade:
+### Densidade: {#densidade}
  - Furo do lado direito.
  - Aberto se o disco é de alta densidade.
  - Não mudar.
@@ -45,4 +45,4 @@
 ### Retângulo superior:
  - Protege o disco.
  - Não abrir, muito menos tocar no disco.
-# Sinais de gravação:
+# Sinais de gravação: {#sinais-de-gravacao}
