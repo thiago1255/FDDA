@@ -1,17 +1,17 @@
-# Introdução:
+# Introdução
  - Neste arquivo, encontra-se as informações do funcionamento para drives de disquete, tais como: Função de cada pino, Codificação dos dados, etc.
-# Função dos pinos (Esq. para Dir.):
-## Pinos de energia:
+# Função dos pinos (Esq. para Dir.)
+## Pinos de energia
  1. +5 Volts.
  2. GND.
  3. GND.
  4. +12 Volts. (Aparentemente desnecessário.)
-## Pinos de dados:
-### Pinos de baixo:
+## Pinos de dados
+### Pinos de baixo
  1. GND.
  2. Sem pinos.
  3. (até 17) Gnd.
-### Pinos de cima:
+### Pinos de cima
  1. Selecionar Densidade. (Deixar desconectado, aparentemente não necessário, [leia esse parágrafo](#densidade).)
  2. Uso customizado pelo drive. (Reservado, não usar ou ligar no GND).
  3. Uso customizado pelo drive. (Reservado, não usar ou ligar no GND).
@@ -29,20 +29,20 @@
  15. [Leitura dos dados do disco.](#sinais-de-gravacao)
  16. Seleciona o lado do disco para gravar/ler: 5v parte de baixo (lado 0).
  17. Indica que o aparelho está pronto quando em 0v. (Aparentemente é para detectar o disco também.)
-# Disquete:
-## Furos:
-### Anti-gravação: {#anti-gravacao}
+# Disquete
+## Furos
+### Anti-gravação {#anti-gravacao}
  - Furo do lado esquerdo.
  - Aberto impossibilita gravação.
  - Tem uma aba para abrir/fechar.
-### Densidade: {#densidade}
+### Densidade {#densidade}
  - Furo do lado direito.
  - Aberto se o disco é de alta densidade.
  - Não mudar.
-## Partes metálicas:
-### Circulo central:
+## Partes metálicas
+### Circulo central
  - Usado para o motor girar o disco.
 ### Retângulo superior:
  - Protege o disco.
  - Não abrir, muito menos tocar no disco.
-# Sinais de gravação: {#sinais-de-gravacao}
+# Sinais de gravação {#sinais-de-gravacao}
