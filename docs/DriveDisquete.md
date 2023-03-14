@@ -1,5 +1,6 @@
 # Introdução
  - Neste arquivo, encontra-se as informações do funcionamento para drives de disquete, tais como: Função de cada pino, Codificação dos dados, etc.
+ - Também informações dos disquetes MF2-HD (Micro Floppy Double High Density), que é o modelo que eu usarei.
 # Função dos pinos (Esq. para Dir.)
 ## Pinos de energia
  1. +5 Volts.
@@ -46,3 +47,5 @@
  - Protege o disco.
  - Não abrir, muito menos tocar no disco.
 # Sinais de gravação
+  Não vou considerar outros modos de gravação, senão o HD (alta densidade) dos discos 3,5".
+  Os discos que tenho, tem duas especificações que decidi anotar: Capacidade de 2MB sem formatação, "80 tracks."; o que significa que, há 80 faixas por lado (ou seja, 160 faixas) guardando 2097152 bytes no total (ou 16777216 bits), usando o padrão ^2 ao invés do *1000.
