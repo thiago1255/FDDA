@@ -74,4 +74,9 @@ Nesse arquivo, vou documentar a manipulação de portas para o Arduino Mega 2560
 13. PK5
 14. PK6
 15. PK7
-# Pinos escolhidos:
+## Pinos escolhidos:
+Escolhi os pinos 22 ao 29, ou PA0 ao PA7, pois:
+- Os registradores e os pinos tem uma sequência. (Diferente por exemplo com os registradores PH.)
+- Esses pinos não são usados para mais nada. (Seriais, I²C, SPI, etc.)
+- Esses pinos têm localização fácil. (Na maior faixa de conectores, são, indo dos seriais ao analógico, os pares segundo ao quinto.)
+# Programação:
