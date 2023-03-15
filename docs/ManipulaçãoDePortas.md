@@ -84,10 +84,39 @@ Escolhi os pinos 22 ao 29, ou PA0 ao PA7, pois:
 ### Modo de operação:
 ```cpp
 //Sintaxe: "DDR" + nome do registrador (A, B, C, etc.)
-DDR = 
+DDRA = B00001111;
+/*
+B significa byte em binário.
+Sendo os 4 primeiros 0, coloca os pinos 22-25 em modo entrada.
+Sendo os 4 ultimos 1, coloca os pinos 26-29 em modo saída.
+*/
 ```
 ### *Digital write*:
+```cpp
+//Sintaxe: "PORT" + nome do registrador.
+PORTA = B00001010;
+/*
+Sendo os 4 primeiros entrada:
+Coloca os pinos 26 e 28 em HIGH;
+Coloca os pinos 27 e 29 em LOW;
+*/
+```
 ### *Digital read*:
+```cpp
+//Sintaxe "PIN" + nome do registrador.
+int valores = 0;
+valores = PINA;
+/*
+Cria uma variável qualquer, no caso uma integer;
+E a coloca com os valores da leitura do mesmo modo que grava-se:
+1 se +5v;
+0 se 0v.
+*/
+```
 ## Usos melhorados:
 ### *Input pull up*:
 Basta colocar a entrada desejada em sinal *HIGH*, após a declaração do modo de operação, não colocar em modo saída.
+# Coisas a testar antes de terminar:
+- Leitura do "PORTA" para saber quais valores foram colocados antes.
+- Velocidade do digitalWrite vs manipulação de porta.
+- Velocidade do digitalRead vs manipulação de portas.
