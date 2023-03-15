@@ -80,3 +80,14 @@ Escolhi os pinos 22 ao 29, ou PA0 ao PA7, pois:
 - Esses pinos não são usados para mais nada. (Seriais, I²C, SPI, etc.)
 - Esses pinos têm localização fácil. (Na maior faixa de conectores, são, indo dos seriais ao analógico, os pares segundo ao quinto.)
 # Programação:
+## Funções básicas:
+### Modo de operação:
+```cpp
+void Setup() {
+}
+```
+### *Digital write*:
+### *Digital read*:
+## Usos melhorados:
+### *Input pull up*:
+Basta colocar a entrada desejada em sinal *HIGH*, após a declaração do modo de operação, não colocar em modo saída.
