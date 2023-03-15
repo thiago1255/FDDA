@@ -48,5 +48,7 @@
  - Não abrir, muito menos tocar no disco.
 # Sinais de gravação
   Não vou considerar outros modos de gravação, senão o HD (alta densidade) dos discos 3,5".
+  
   Os discos que tenho, tem duas especificações que decidi anotar: Capacidade de 2MB sem formatação, "80 tracks."; o que significa que, há 80 faixas por lado (ou seja, 160 faixas) guardando 2000000 Bytes (ou 16000000 bits), claro, usando o padrão mil ao invéz de elevação a 2. 
+  
   É fácil dividir 16000000 por 160 para saber que cada faixa tem 100000 bits (ou 12500 bytes, mas isso não importa para os sinais, já que são em bits).
