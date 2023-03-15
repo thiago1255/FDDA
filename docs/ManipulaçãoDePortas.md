@@ -83,8 +83,8 @@ Escolhi os pinos 22 ao 29, ou PA0 ao PA7, pois:
 ## Funções básicas:
 ### Modo de operação:
 ```cpp
-void Setup() {
-}
+//Sintaxe: "DDR" + nome do registrador (A, B, C, etc.)
+DDR = 
 ```
 ### *Digital write*:
 ### *Digital read*:
