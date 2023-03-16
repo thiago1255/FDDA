@@ -87,8 +87,8 @@ Escolhi os pinos 22 ao 29, ou PA0 ao PA7, pois:
 DDRA = B00001111;
 /*
 B significa byte em binário.
-Sendo os 4 primeiros 0, coloca os pinos 22-25 em modo entrada.
-Sendo os 4 ultimos 1, coloca os pinos 26-29 em modo saída.
+Sendo os 4 primeiros 0, coloca os pinos 29-26 em modo entrada.
+Sendo os 4 ultimos 1, coloca os pinos 25-22 em modo saída.
 */
 ```
 ### *Digital write*:
@@ -97,17 +97,17 @@ Sendo os 4 ultimos 1, coloca os pinos 26-29 em modo saída.
 PORTA = B00001010;
 /*
 Sendo os 4 primeiros entrada:
-Coloca os pinos 26 e 28 em HIGH;
-Coloca os pinos 27 e 29 em LOW;
+Coloca os pinos 25 e 23 em HIGH;
+Coloca os pinos 24 e 22 em LOW;
 */
 ```
 ### *Digital read*:
 ```cpp
 //Sintaxe "PIN" + nome do registrador.
-int valores = 0;
+byte valores = 0;
 valores = PINA;
 /*
-Cria uma variável qualquer, no caso uma integer;
+Cria uma variável qualquer, no caso um byte;
 E a coloca com os valores da leitura do mesmo modo que grava-se:
 1 se +5v;
 0 se 0v.
