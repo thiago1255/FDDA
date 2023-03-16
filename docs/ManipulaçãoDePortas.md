@@ -113,11 +113,23 @@ E a coloca com os valores da leitura do mesmo modo que grava-se:
 0 se 0v.
 */
 ```
-## Usos melhorados:
+## Mais detalhes:
+### Sequencia dos bits e portas:
+```c
+01010101
+76543210
+```
 ### *Input pull up*:
 Basta colocar a entrada desejada em sinal *HIGH*, após a declaração do modo de operação, não colocar em modo saída.
 ### Leitura do *PORT*:
 É possível ler o valor de "PORT" para saber qual valor foi colocado nos registradores, sem ler as voltagens colocadas nas portas de entrada, tente esse [código](https://github.com/thiago1255/FDDA/blob/main/docs/teste_portas.ino), mas lembre-se de conectar os pinos 2 e 29.
+É possível também ler o valor do "DDR".
+### Mudança de portas selecionadas:
+
+### Leitura apenas das portas de entrada:
+```cpp
+byte valores = PINA - PORTA;
+```
 # Coisas a testar antes de terminar:
 ~~- Leitura do "PORTA" para saber quais valores foram colocados antes.~~
 - Velocidade do digitalWrite vs manipulação de porta.
