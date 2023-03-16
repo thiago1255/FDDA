@@ -116,7 +116,9 @@ E a coloca com os valores da leitura do mesmo modo que grava-se:
 ## Usos melhorados:
 ### *Input pull up*:
 Basta colocar a entrada desejada em sinal *HIGH*, após a declaração do modo de operação, não colocar em modo saída.
+### Leitura do *PORT*:
+É possível ler o valor de "PORT" para saber qual valor foi colocado nos registradores, sem ler as voltagens colocadas nas portas de entrada, tente esse [código](https://github.com/thiago1255/FDDA/blob/main/docs/teste_portas.ino), mas lembre-se de conectar os pinos 2 e 29.
 # Coisas a testar antes de terminar:
-- Leitura do "PORTA" para saber quais valores foram colocados antes.
+~~- Leitura do "PORTA" para saber quais valores foram colocados antes.~~
 - Velocidade do digitalWrite vs manipulação de porta.
 - Velocidade do digitalRead vs manipulação de portas.
