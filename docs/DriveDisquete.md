@@ -47,8 +47,13 @@
  - Protege o disco.
  - Não abrir, muito menos tocar no disco.
 # Sinais de gravação
-  Não vou considerar outros modos de gravação, senão o HD (alta densidade) dos discos 3,5".
-  
-  Os discos que tenho, tem duas especificações que decidi anotar: Capacidade de 2MB sem formatação, "80 tracks."; o que significa que, há 80 faixas por lado (ou seja, 160 faixas) guardando 2000000 Bytes (ou 16000000 bits), claro, usando o padrão mil ao invéz de elevação a 2. 
-  
-  É fácil dividir 16000000 por 160 para saber que cada faixa tem 100000 bits (ou 12500 bytes, mas isso não importa para os sinais, já que são em bits).
+  Não vou considerar outros modos de gravação, senão o HD (alta densidade) dos discos 3,5":
+  Os discos que tenho tem "80 tracks" o que significa que, há 80 faixas por lado (ou seja, 160 faixas);
+  Em muitos lugares é possivel encontrar que eles tem 1.44MB sem formatação e 2MB sem formatação (pois o sistema de arquivos exige espaço para tabelas e etc.), para ter a quantidade correta de bytes (já que há a confusão de 1000 x 1024, entre outras coisas) é melhor calcular:
+  - 1 Faixa contém 18 setores;
+  - 1 setor contém 512 bytes;
+  - Logo **1 faixa contém 9216 bytes**;
+  - E multiplicando esse valor por 160 obtemos 1474560 bytes;
+  - O que são na verdade 1,4062 MiB ou 1,4746 MB decimais;
+  Por enquanto, para calcular os sinais, vamos ignorar a formatação;
+  Sendo que em um byte há 8 bits, em uma faixa há 73728 bits;
