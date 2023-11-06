@@ -132,6 +132,13 @@ PORTA &= B01101001;
 byte leitura = PINA & B00010000 //1 deve se a porta que se deseja ler
 bool booleana = leitura != 0 //verifica se há pelo menos um bit verdadeiro
 ```
-# Coisas a testar antes de terminar:
-- Velocidade do digitalWrite vs manipulação de porta.
-- Velocidade do digitalRead vs manipulação de portas.
+# Teste realizado com manipulação de portas:
+Com este [código](https://github.com/thiago1255/FDDA/blob/main/docs/velocidadeDePortas.ino), que liga e desliga uma porta especifica 14 vezes, foi possivel ver que o DigitalWrite chega a ser 26 vezes mais lento !
+```
+Sem loop for:
+  Manipulação de portas: 4 microssegundos;
+  Digital Write: 104 microssegundos;
+Com loop for:
+  Manipulação de portas: 8 microssegundos;
+  Digital Write: 112 microssegundos;
+```
