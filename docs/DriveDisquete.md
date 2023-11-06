@@ -59,7 +59,15 @@ Por enquanto, para calcular os sinais, vamos ignorar a formatação; Sendo que e
      - No meio para bits 1 (nunca no começo ou fim);
      - Para bits 0, pode não ocorrer (se 1-zero-1), no fim (se 1-zero-0), no começo (se 0-zero-1) ou ambos (se 0-zero-0).
    - O tamanho da faixa é:
-     - 0,5 espaço quando um 1 está no meio de dois zeros (ocorre duas vezes no mesmo 1), ou quando um um está começando ou terminando a gravação; 
-     - 1 espaço quando um 0 está cercado de outros zeros, ou entre um 1 e outro;
+     - 0,5 espaço quando um 1 está começando ou terminando a gravação; 
+     - 1 espaço quando um 0 está cercado de outros zeros, ou entre o meio de um 1 e outro;
      - 1,5 espaços quando no meio de um 1, um 0 inteiro, e o terceiro digito é um 0 (100); Ou no final de um 0, um 0 inteiro, e o meio de um 1 (001)
      - 2 espaços, entre o meio de um 1, um 0 inteiro e o meio do terceiro 1 (101);
+
+Sendo que o motor gira a ~300 RPM, ou seja, 5 RPS, o drive consegue mandar 368640 bits por segundo. Pois cada faixa é lida 5 vezes por segundo.
+# Ler também:
+https://en.wikipedia.org/wiki/Floppy_disk_drive_interface
+https://web.archive.org/web/20180917052807/http://www.pcguide.com/ref/fdd/formatSummary-c.html
+https://en.wikipedia.org/wiki/List_of_floppy_disk_formats
+https://en.wikipedia.org/wiki/Modified_frequency_modulation#/media/File:FM-MFM-Codierung-int.svg
+https://www.techopedia.com/definition/27636/modified-frequency-modulation-mfm
