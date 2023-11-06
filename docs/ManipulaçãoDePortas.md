@@ -85,34 +85,27 @@ Escolhi os pinos 22 ao 29, ou PA0 ao PA7, pois:
 ```cpp
 //Sintaxe: "DDR" + nome do registrador (A, B, C, etc.)
 DDRA = B00001111;
-/*
+```
 B significa byte em binário.
 Sendo os 4 primeiros 0, coloca os pinos 29-26 em modo entrada.
 Sendo os 4 ultimos 1, coloca os pinos 25-22 em modo saída.
-*/
-```
 ### *Digital write*:
 ```cpp
 //Sintaxe: "PORT" + nome do registrador.
 PORTA = B00001010;
-/*
+```
 Sendo os 4 primeiros entrada:
 Coloca os pinos 25 e 23 em HIGH;
 Coloca os pinos 24 e 22 em LOW;
-*/
-```
 ### *Digital read*:
 ```cpp
 //Sintaxe "PIN" + nome do registrador.
-byte valores = 0;
-valores = PINA;
-/*
-Cria uma variável qualquer, no caso um byte;
-E a coloca com os valores da leitura do mesmo modo que grava-se:
+byte valores = PINA;
+```
+Cria uma variável qualquer, no caso um byte e escreve os valores da leitura do mesmo modo que grava-se:
 1 se +5v;
 0 se 0v.
-*/
-```
+Lembrando que portas que foram selecionadas como saída tembém serão lidas.
 ## Mais detalhes:
 ### Sequencia dos bits e portas:
 ```c
@@ -120,15 +113,18 @@ E a coloca com os valores da leitura do mesmo modo que grava-se:
 76543210
 ```
 ### *Input pull up*:
-Basta colocar a entrada desejada em sinal *HIGH*, após a declaração do modo de operação, não colocar em modo saída.
-### Leitura do *PORT*:
-É possível ler o valor de "PORT" para saber qual valor foi colocado nos registradores, sem ler as voltagens colocadas nas portas de entrada, tente esse [código](https://github.com/thiago1255/FDDA/blob/main/docs/teste_portas.ino), mas lembre-se de conectar os pinos 2 e 29.
-É possível também ler o valor do "DDR".
-### Mudança de portas selecionadas:
-
-### Leitura apenas das portas de entrada:
+Basta colocar a entrada desejada em sinal *HIGH* (PORT), após a declaração do modo de operação, mas manter em modo entrada (DDR), ler normalmente (PIN).
+### Mudar saída de portas especificas:
+Para mudar se alguma(s) porta está ligada ou desligada (PORT), independente do estado anterior, e sem alterar outras portas, pode-se usar operadores binarios:
+Para ligar portas:
 ```cpp
-byte valores = PINA - PORTA;
+//usar o operador OR (todas as portas marcadas com 1 serão ligadas, 0 não serão alteradas)
+PORTA |= B00100101;
+```
+Para desligar portas:
+```cpp
+//usar o operador AND (todas as portas marcadas com 0 serão desligadas, 1 não serão alteradas)
+PORTA &= B01101001;
 ```
 # Coisas a testar antes de terminar:
 ~~- Leitura do "PORTA" para saber quais valores foram colocados antes.~~
