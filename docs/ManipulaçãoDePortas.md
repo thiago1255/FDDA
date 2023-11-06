@@ -126,7 +126,12 @@ Para desligar portas:
 //usar o operador AND (todas as portas marcadas com 0 serão desligadas, 1 não serão alteradas)
 PORTA &= B01101001;
 ```
+### Ler uma porta especifica:
+```cpp
+//guarda em uma booleana, código extendido por motivos de explicação:
+byte leitura = PINA & B00010000 //1 deve se a porta que se deseja ler
+bool booleana = leitura != 0 //verifica se há pelo menos um bit verdadeiro
+```
 # Coisas a testar antes de terminar:
-~~- Leitura do "PORTA" para saber quais valores foram colocados antes.~~
 - Velocidade do digitalWrite vs manipulação de porta.
 - Velocidade do digitalRead vs manipulação de portas.
