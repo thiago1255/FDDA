@@ -54,7 +54,7 @@ Não vou considerar outros modos de gravação, senão o HD (alta densidade) dos
   - E multiplicando esse valor por 160 obtemos 1474560 bytes;
   - O que são na verdade 1,4062 MiB ou 1,4746 MB decimais;
 
-Por enquanto, para calcular os sinais, vamos ignorar a formatação; Sendo que em um byte há 8 bits, em uma faixa há 73728 bits; Sabendo isso, vamos para a parte de codificação dos dados, **o MFM***:
+Por enquanto, para calcular os sinais, vamos ignorar a formatação; Sendo que em um byte há 8 bits, em uma faixa há 73728 bits; Sabendo isso, vamos para a parte de codificação dos dados, **o MFM**:
    - A transição de nivel (0v para 5v e vice versa) ocorre:
      - No meio para bits 1 (nunca no começo ou fim);
      - Para bits 0, pode não ocorrer (se 1-zero-1), no fim (se 1-zero-0), no começo (se 0-zero-1) ou ambos (se 0-zero-0).
